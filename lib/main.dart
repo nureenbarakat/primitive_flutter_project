@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Hello World',
+
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -51,7 +52,15 @@ class MyHomePage extends StatelessWidget {
         ],
       ),
       body: Container(
-        color: Colors.grey,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5),
+          color: Colors.grey,
+          border: Border.all(
+            color: Colors.green, // Border color
+            width: 4.0, // Border width
+          ),
+        ),
+
         child: Column(
           children: [
             // Row with two blue items at the top left and top right
